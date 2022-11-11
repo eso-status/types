@@ -1,11 +1,11 @@
 {
   "name": "@eso-status/types",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Types for all @eso-status libraries",
   "main": "",
   "types": "index.d.ts",
   "scripts": {
-    "postinstall": "cp pre-commit .git/hooks/ && chmod +x .git/hooks/pre-commit && echo 'hook copied'",
+    "post-install": "cp pre-commit .git/hooks/ && chmod +x .git/hooks/pre-commit && echo 'hook copied'",
     "lint": "eslint src --ext .ts",
     "lint:fix": "eslint src --ext .ts --fix",
     "build": "rm -f index.d.ts && rm -R -f lib/* && tsc && cat lib/types/*d.ts >> index.ts && cat lib/interfaces/*d.ts >> index.ts && rm -R -f lib && mv index.ts index.d.ts && echo \"import { Moment } from 'moment';\" >> temp.index.d.ts && grep -v \"import \" index.d.ts >> temp.index.d.ts && mv temp.index.d.ts index.d.ts"
