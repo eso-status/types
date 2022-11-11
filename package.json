@@ -1,10 +1,11 @@
 {
   "name": "@eso-status/types",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Types for all @eso-status libraries",
   "main": "",
   "types": "index.d.ts",
   "scripts": {
+    "install": "cp pre-commit .git/hooks/ && chmod +x .git/hooks/pre-commit && echo 'hook copied'",
     "lint": "eslint src --ext .ts",
     "lint:fix": "eslint src --ext .ts --fix",
     "build": "rm -f index.d.ts && rm -R -f lib/* && tsc && cat lib/types/*d.ts >> index.ts && cat lib/interfaces/*d.ts >> index.ts && rm -R -f lib && mv index.ts index.d.ts && echo \"import { Moment } from 'moment';\" >> temp.index.d.ts && grep -v \"import \" index.d.ts >> temp.index.d.ts && mv temp.index.d.ts index.d.ts"
@@ -25,13 +26,13 @@
   },
   "homepage": "https://github.com/eso-status/types#readme",
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "5.33.1",
-    "@typescript-eslint/parser": "5.33.1",
-    "@typescript-eslint/typescript-estree": "5.33.1",
-    "eslint": "8.22.0",
+    "@typescript-eslint/eslint-plugin": "5.42.1",
+    "@typescript-eslint/parser": "5.42.1",
+    "@typescript-eslint/typescript-estree": "5.42.1",
+    "eslint": "8.27.0",
     "eslint-config-airbnb-base": "15.0.0",
     "eslint-plugin-import": "2.26.0",
-    "typescript": "4.7.4"
+    "typescript": "4.8.4"
   },
   "dependencies": {
     "moment": "2.29.4"
