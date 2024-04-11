@@ -1,6 +1,6 @@
 {
   "name": "@eso-status/types",
-  "version": "1.0.8",
+  "version": "1.0.6",
   "description": "Types for all @eso-status libraries",
   "main": "",
   "types": "index.d.ts",
