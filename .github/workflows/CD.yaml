@@ -22,7 +22,7 @@ jobs:
         os:
           - ubuntu-latest
         node:
-          - 20.x
+          - 20
     steps:
       - name: Checkout source
         uses: actions/checkout@v2
