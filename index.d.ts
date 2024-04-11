@@ -2,47 +2,47 @@ import { Moment } from 'moment';
 /**
  * Slug type for ESO servers
  */
-export declare type ServerSlug = 'server_xbox_na' | 'server_xbox_eu' | 'server_ps_na' | 'server_ps_eu' | 'server_pc_na' | 'server_pc_eu' | 'server_pc_pts';
+export type ServerSlug = 'server_xbox_na' | 'server_xbox_eu' | 'server_ps_na' | 'server_ps_eu' | 'server_pc_na' | 'server_pc_eu' | 'server_pc_pts';
 /**
  * Support type for ESO servers
  */
-export declare type ServerSupport = 'pc' | 'ps' | 'xbox';
+export type ServerSupport = 'pc' | 'ps' | 'xbox';
 /**
  * Zone type for ESO servers
  */
-export declare type ServerZone = 'eu' | 'na' | 'pts';
+export type ServerZone = 'eu' | 'na' | 'pts';
 /**
  * Slug type for ESO services
  */
-export declare type ServiceSlug = 'service_web_site' | 'service_web_forum' | 'service_store_crown' | 'service_store_eso' | 'service_system_account';
+export type ServiceSlug = 'service_web_site' | 'service_web_forum' | 'service_store_crown' | 'service_store_eso' | 'service_system_account';
 /**
  * Support type for ESO services
  */
-export declare type ServiceSupport = 'web' | 'store' | 'system';
+export type ServiceSupport = 'web' | 'store' | 'system';
 /**
  * Zone type for ESO services
  */
-export declare type ServiceZone = 'site' | 'forum' | 'eso' | 'crown' | 'account';
+export type ServiceZone = 'site' | 'forum' | 'eso' | 'crown' | 'account';
 /**
  * Slug type for ESO servers/services
  */
-export declare type Slug = ServerSlug | ServiceSlug | 'undefined';
+export type Slug = ServerSlug | ServiceSlug | 'undefined';
 /**
  * Status type for ESO servers/services
  */
-export declare type Status = 'up' | 'down' | 'issues' | 'planned' | 'undefined';
+export type Status = 'up' | 'down' | 'issues' | 'planned' | 'undefined';
 /**
  * Support type for ESO servers/services
  */
-export declare type Support = ServerSupport | ServiceSupport;
+export type Support = ServerSupport | ServiceSupport;
 /**
  * Type for ESO servers/services
  */
-export declare type Type = 'server' | 'service';
+export type Type = 'server' | 'service';
 /**
  * Zone type for ESO servers/services
  */
-export declare type Zone = ServerZone | ServiceZone;
+export type Zone = ServerZone | ServiceZone;
 /**
  * Data format for ESO server/service element
  */
