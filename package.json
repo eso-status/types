@@ -1,6 +1,6 @@
 {
   "name": "@eso-status/types",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Types for all @eso-status libraries",
   "main": "",
   "types": "index.d.ts",
@@ -26,13 +26,13 @@
   },
   "homepage": "https://github.com/eso-status/types#readme",
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "7.6.0",
-    "@typescript-eslint/parser": "7.6.0",
-    "@typescript-eslint/typescript-estree": "7.6.0",
+    "@typescript-eslint/eslint-plugin": "7.18.0",
+    "@typescript-eslint/parser": "7.18.0",
+    "@typescript-eslint/typescript-estree": "7.18.0",
     "eslint": "8.57.0",
     "eslint-config-airbnb-base": "15.0.0",
     "eslint-plugin-import": "2.29.1",
-    "typescript": "5.4.5"
+    "typescript": "5.5.4"
   },
   "dependencies": {
     "moment": "2.30.1"
