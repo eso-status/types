@@ -5,16 +5,16 @@ import { Type } from '../type/Type.type';
 import { Slug } from '../type/Slug.type';
 import { Status } from '../type/Status.type';
 
-export interface RawEsoStatus {
+export interface EsoStatusRawData {
   source: string;
   raw: string;
+  status: Status;
+  rawStatus?: string;
   slug: Slug;
-  rawDate?: string;
-  dates?: Moment[];
+  rawSlug: string;
   type: Type;
   support: Support;
   zone: Zone;
-  status: Status;
-  rawSlug: string;
-  rawStatus?: string;
+  dates?: Moment[];
+  rawDate?: string;
 }
