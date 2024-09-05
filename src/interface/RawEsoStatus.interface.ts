@@ -6,7 +6,7 @@ import { Slug } from '../type/Slug.type';
 import { Status } from '../type/Status.type';
 
 export interface RawEsoStatus {
-  sources: string;
+  source: string;
   raw: string;
   slug: Slug;
   rawDate?: string;
@@ -16,5 +16,5 @@ export interface RawEsoStatus {
   zone: Zone;
   status: Status;
   rawSlug: string;
-  rawStatus: string;
+  rawStatus?: string;
 }
