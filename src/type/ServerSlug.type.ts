@@ -1,8 +1,19 @@
+import { ServerXboxNaSlugType } from './slug/serverXboxNaSlug.type';
+import { ServerXboxEuSlugType } from './slug/serverXboxEuSlug.type';
+import { ServerPsNaSlugType } from './slug/serverPsNaSlug.type';
+import { ServerPsEuSlugType } from './slug/serverPsEuSlug.type';
+import { ServerPcNaSlugType } from './slug/serverPcNaSlug.type';
+import { ServerPcEuSlugType } from './slug/serverPcEuSlug.type';
+import { ServerPcPtsSlugType } from './slug/serverPcPtsSlug.type';
+
+/**
+ * Ensemble des slugs correspondant au server
+ */
 export type ServerSlug =
-  | 'server_xbox_na'
-  | 'server_xbox_eu'
-  | 'server_ps_na'
-  | 'server_ps_eu'
-  | 'server_pc_na'
-  | 'server_pc_eu'
-  | 'server_pc_pts';
+  | ServerXboxNaSlugType
+  | ServerXboxEuSlugType
+  | ServerPsNaSlugType
+  | ServerPsEuSlugType
+  | ServerPcNaSlugType
+  | ServerPcEuSlugType
+  | ServerPcPtsSlugType;
