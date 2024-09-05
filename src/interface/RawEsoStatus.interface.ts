@@ -16,5 +16,5 @@ export interface RawEsoStatus {
   zone: Zone;
   status: Status;
   rawSlug: string;
-  rawStatus: string;
+  rawStatus?: string;
 }
