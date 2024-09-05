@@ -29,8 +29,5 @@ module.exports = {
     node: true,
     jest: true,
   },
-  ignorePatterns: ['.eslintrc.js'],
-  rules: {
-    'import/prefer-default-export': 'off',
-  }
+  ignorePatterns: ['.eslintrc.js']
 };

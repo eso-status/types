@@ -3,4 +3,5 @@ import { ServiceWebForumSlugType } from '../../type/slug/serviceWebForumSlug.typ
 /**
  * Slug pour le service du forum
  */
-export const ServiceWebForumSlug: ServiceWebForumSlugType = 'service_web_forum';
+const ServiceWebForumSlug: ServiceWebForumSlugType = 'service_web_forum';
+export default ServiceWebForumSlug;

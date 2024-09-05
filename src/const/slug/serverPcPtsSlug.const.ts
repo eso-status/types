@@ -3,4 +3,5 @@ import { ServerPcPtsSlugType } from '../../type/slug/serverPcPtsSlug.type';
 /**
  * Slug pour le PTS
  */
-export const ServerPcPtsSlug: ServerPcPtsSlugType = 'server_pc_pts';
+const ServerPcPtsSlug: ServerPcPtsSlugType = 'server_pc_pts';
+export default ServerPcPtsSlug;

@@ -3,5 +3,5 @@ import { ServiceStoreCrownSlugType } from '../../type/slug/serviceStoreCrownSlug
 /**
  * Slug pour le service de la boutique à couronne
  */
-export const ServiceStoreCrownSlug: ServiceStoreCrownSlugType =
-  'service_store_crown';
+const ServiceStoreCrownSlug: ServiceStoreCrownSlugType = 'service_store_crown';
+export default ServiceStoreCrownSlug;
