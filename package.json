@@ -28,7 +28,7 @@
     "format": "prettier --write \"src/**/*.ts\"",
     "lint": "eslint \"src/**/*.ts\"",
     "lint:fix": "eslint \"src/**/*.ts\" --fix",
-    "build": "rm -R -f lib/* && tsc --project tsconfig.build.json && rm -f index.d.ts && cat lib/type/*d.ts >> index.ts && cat lib/interface/*d.ts >> index.ts && rm -R -f lib && mv index.ts index.d.ts && echo \"import { Moment } from 'moment';\" >> temp.index.d.ts && grep -v \"import \" index.d.ts >> temp.index.d.ts && mv temp.index.d.ts index.d.ts",
+    "build": "rm -R -f lib/* && tsc --project tsconfig.build.json && rm -f index.d.ts && cat lib/type/**/*d.ts >> index.ts && cat lib/type/*d.ts >> index.ts && cat lib/const/**/*d.ts >> index.ts && cat lib/interface/*d.ts >> index.ts && rm -R -f lib && mv index.ts index.d.ts && echo \"import { Moment } from 'moment';\" >> temp.index.d.ts && grep -v \"import \" index.d.ts >> temp.index.d.ts && mv temp.index.d.ts index.d.ts",
     "prepare": "husky"
   },
   "dependencies": {

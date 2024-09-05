@@ -19,3 +19,5 @@
 ```shell
 npm i @eso-status/types
 ```
+
+

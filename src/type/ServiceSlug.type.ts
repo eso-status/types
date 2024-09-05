@@ -1,6 +1,15 @@
+import { ServiceWebSiteSlugType } from './slug/serviceWebSiteSlug.type';
+import { ServiceWebForumSlugType } from './slug/serviceWebForumSlug.type';
+import { ServiceStoreCrownSlugType } from './slug/serviceStoreCrownSlug.type';
+import { ServiceStoreEsoSlugType } from './slug/serviceStoreEsoSlug.type';
+import { ServiceSystemAccountSlugType } from './slug/serviceSystemAccountSlug.type';
+
+/**
+ * Ensemble des slugs correspondant au service
+ */
 export type ServiceSlug =
-  | 'service_web_site'
-  | 'service_web_forum'
-  | 'service_store_crown'
-  | 'service_store_eso'
-  | 'service_system_account';
+  | ServiceWebSiteSlugType
+  | ServiceWebForumSlugType
+  | ServiceStoreCrownSlugType
+  | ServiceStoreEsoSlugType
+  | ServiceSystemAccountSlugType;
