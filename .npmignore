@@ -2,8 +2,15 @@
 .idea
 node_modules
 src
+.editorconfig
+.eslintignore
 .eslintrc.js
 .gitignore
 .npmignore
-package-lock.json
+.npmrc
+.prettierignore
+.prettierrc
+sonar-project.properties
+tsconfig.build.json
+tsconfig.eslint.json
 tsconfig.json
