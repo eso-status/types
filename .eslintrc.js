@@ -30,4 +30,7 @@ module.exports = {
     jest: true,
   },
   ignorePatterns: ['.eslintrc.js'],
+  rules: {
+    'import/prefer-default-export': 'off',
+  }
 };
