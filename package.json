@@ -27,7 +27,7 @@
     "format": "prettier --write \"src/**/*.ts\"",
     "lint": "eslint \"src/**/*.ts\"",
     "lint:fix": "eslint \"src/**/*.ts\" --fix",
-    "build": "rm -R -f lib/* && tsc --project tsconfig.build.json && rm -f index.d.ts && rm -f index.js && cat lib/type/**/*d.ts >> index.d.ts && cat lib/type/**/*.js >> index.js && cat lib/type/*d.ts >> index.d.ts && cat lib/type/*.js >> index.js && cat lib/const/**/*d.ts >> index.d.ts && cat lib/const/**/*.js >> index.js && cat lib/interface/*d.ts >> index.d.ts && cat lib/interface/*.js >> index.js && rm -R -f lib && echo \"import { Moment } from 'moment';\" >> temp.index.d.ts && grep -v \"import \" index.d.ts >> temp.index.d.ts && mv temp.index.d.ts index.d.ts && sed -i '' '/defineProperty/d' index.js && sed -i '' '/sourceMappingURL/d' index.js && sed -i '' '/void 0/d' index.js",
+    "build": "rm -R -f lib/* && tsc --project tsconfig.build.json && rm -f index.d.ts && rm -f index.js && cat lib/type/**/*d.ts >> index.d.ts && cat lib/type/**/*.js >> index.js && cat lib/type/*d.ts >> index.d.ts && cat lib/type/*.js >> index.js && cat lib/const/**/*d.ts >> index.d.ts && cat lib/const/**/*.js >> index.js && cat lib/interface/*d.ts >> index.d.ts && cat lib/interface/*.js >> index.js && rm -R -f lib && echo \"import { Moment } from 'moment';\" >> temp.index.d.ts && grep -v \"import \" index.d.ts >> temp.index.d.ts && mv temp.index.d.ts index.d.ts && awk '!/defineProperty/' ./index.js > index.temp.js && mv index.temp.js ./index.js && awk '!/sourceMappingURL/' ./index.js > index.temp.js && mv index.temp.js ./index.js && awk '!/void 0/' ./index.js > index.temp.js && mv index.temp.js ./index.js && rm -rf temp",
     "prepare": "husky"
   },
   "dependencies": {
