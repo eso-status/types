@@ -3,4 +3,5 @@ import { ServiceTypeType } from '../../type/type/serviceType.type';
 /**
  * Type pour les services
  */
-export const ServiceType: ServiceTypeType = 'service';
+const ServiceType: ServiceTypeType = 'service';
+export default ServiceType;

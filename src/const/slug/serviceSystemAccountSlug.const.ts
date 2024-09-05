@@ -3,5 +3,6 @@ import { ServiceSystemAccountSlugType } from '../../type/slug/serviceSystemAccou
 /**
  * Slug pour le service de system de compte
  */
-export const ServiceSystemAccountSlug: ServiceSystemAccountSlugType =
+const ServiceSystemAccountSlug: ServiceSystemAccountSlugType =
   'service_system_account';
+export default ServiceSystemAccountSlug;
