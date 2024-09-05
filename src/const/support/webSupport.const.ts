@@ -3,4 +3,5 @@ import { WebSupportType } from '../../type/support/webSupport.type';
 /**
  * Support pour les services web
  */
-export const WebSupport: WebSupportType = 'web';
+const WebSupport: WebSupportType = 'web';
+export default WebSupport;

@@ -3,4 +3,5 @@ import { PcSupportType } from '../../type/support/pcSupport.type';
 /**
  * Support pour PC/Mac
  */
-export const PcSupport: PcSupportType = 'pc';
+const PcSupport: PcSupportType = 'pc';
+export default PcSupport;
