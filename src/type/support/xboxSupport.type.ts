@@ -1,4 +1,4 @@
 /**
- * Support pour Xbox
+ * Support for Xbox
  */
 export type XboxSupportType = 'xbox';

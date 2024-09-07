@@ -1,7 +1,7 @@
 import { PsSupportType } from '../../type/support/psSupport.type';
 
 /**
- * Support pour PlayStation®
+ * Support for PlayStation®
  */
 const PsSupport: PsSupportType = 'ps';
 export default PsSupport;

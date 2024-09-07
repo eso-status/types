@@ -3,6 +3,6 @@ import { PsSupportType } from './support/psSupport.type';
 import { XboxSupportType } from './support/xboxSupport.type';
 
 /**
- * Ensemble des supports des server
+ * Collection of supports for servers
  */
 export type ServerSupport = PcSupportType | PsSupportType | XboxSupportType;

@@ -5,7 +5,7 @@ import { ServiceStoreEsoSlugType } from './slug/serviceStoreEsoSlug.type';
 import { ServiceSystemAccountSlugType } from './slug/serviceSystemAccountSlug.type';
 
 /**
- * Ensemble des slugs correspondant au service
+ * Collection of slugs corresponding to the service
  */
 export type ServiceSlug =
   | ServiceWebSiteSlugType

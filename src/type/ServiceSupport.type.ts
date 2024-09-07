@@ -3,7 +3,7 @@ import { StoreSupportType } from './support/storeSupport.type';
 import { SystemSupportType } from './support/systemSupport.type';
 
 /**
- * Ensemble des supports des server
+ * Collection of supports for servers
  */
 export type ServiceSupport =
   | WebSupportType

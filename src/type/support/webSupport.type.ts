@@ -1,4 +1,4 @@
 /**
- * Support pour les servies web
+ * Support for web services
  */
 export type WebSupportType = 'web';

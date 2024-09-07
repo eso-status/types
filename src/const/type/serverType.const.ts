@@ -1,7 +1,7 @@
 import { ServerTypeType } from '../../type/type/serverType.type';
 
 /**
- * Type pour les serveurs
+ * Type for servers
  */
 const ServerType: ServerTypeType = 'server';
 export default ServerType;

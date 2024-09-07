@@ -1,4 +1,4 @@
 /**
- * Support pour les boutiques
+ * Support for the stores
  */
 export type StoreSupportType = 'store';

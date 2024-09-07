@@ -1,4 +1,4 @@
 /**
- * Zone pour l'Amérique du Nord
+ * Zone for North America
  */
 export type NaZoneType = 'na';

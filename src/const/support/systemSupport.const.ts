@@ -1,7 +1,7 @@
 import { SystemSupportType } from '../../type/support/systemSupport.type';
 
 /**
- * Support pour le system de compte
+ * Support for the account system
  */
 const SystemSupport: SystemSupportType = 'system';
 export default SystemSupport;

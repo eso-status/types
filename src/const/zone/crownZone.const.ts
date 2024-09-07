@@ -1,7 +1,7 @@
 import { CrownZoneType } from '../../type/zone/crownZone.type';
 
 /**
- * Zone pour la boutique à couronne
+ * Zone for the Crown Store
  */
 const CrownZone: CrownZoneType = 'crown';
 export default CrownZone;

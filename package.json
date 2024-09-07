@@ -1,6 +1,7 @@
 {
   "name": "@eso-status/types",
-  "version": "2.0.0-dev.11",
+  "version": "2.0.0-dev.12",
+  "description": "Library containing all data types for the @eso-status solution",
   "author": "@dov118 <contact@dov118.dev> (https://dov118.dev)",
   "license": "MIT",
   "engineStrict": true,

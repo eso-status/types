@@ -1,4 +1,4 @@
 /**
- * Slug pour le service du forum
+ * Slug for the forum service
  */
 export type ServiceWebForumSlugType = 'service_web_forum';

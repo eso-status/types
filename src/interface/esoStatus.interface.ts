@@ -8,39 +8,39 @@ import { EsoStatusMaintenance } from './esoStatusMaintenance.interface';
 import { EsoStatusRawData } from './esoStatusRawData.interface';
 
 /**
- * Format du status d'un server/service ESO
+ * Format of an ESO server/service status
  */
 export interface EsoStatus {
   /**
-   * Liste des informations du server/service
+   * List of server/service information
    */
   rawData: EsoStatusRawData;
   /**
-   * Status du server/service
+   * Status of the server/service
    */
   status: Status;
   /**
-   * Date depuis la quel le server/service est à ce status
+   * Date since the server/service has been in this status
    */
   statusSince: Moment;
   /**
-   * Slug du server/service
+   * Slug of the server/service
    */
   slug: Slug;
   /**
-   * Type du server/service
+   * Type of the server/service
    */
   type: Type;
   /**
-   * Support du server/service
+   * Support of the server/service
    */
   support: Support;
   /**
-   * Zone du server/service
+   * Zone of the server/service
    */
   zone: Zone;
   /**
-   * Prochaine maintenance du server/service
+   * Next maintenance of the server/service
    */
   maintenance?: EsoStatusMaintenance;
 }

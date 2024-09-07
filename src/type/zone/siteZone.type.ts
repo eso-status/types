@@ -1,4 +1,4 @@
 /**
- * Zone pour le site web
+ * Zone for the website
  */
 export type SiteZoneType = 'site';

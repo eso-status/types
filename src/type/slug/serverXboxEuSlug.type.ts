@@ -1,4 +1,4 @@
 /**
- * Slug pour le Mégaserveur européen Xbox
+ * Slug for the European Xbox Megaserver
  */
 export type ServerXboxEuSlugType = 'server_xbox_eu';

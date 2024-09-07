@@ -7,7 +7,7 @@ import { ServerPcEuSlugType } from './slug/serverPcEuSlug.type';
 import { ServerPcPtsSlugType } from './slug/serverPcPtsSlug.type';
 
 /**
- * Ensemble des slugs correspondant au server
+ * Collection of slugs corresponding to the server
  */
 export type ServerSlug =
   | ServerXboxNaSlugType
