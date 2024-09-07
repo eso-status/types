@@ -1,4 +1,4 @@
 /**
- * Support pour PlayStation®
+ * Support for PlayStation®
  */
 export type PsSupportType = 'ps';

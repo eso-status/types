@@ -2,19 +2,19 @@ import { Moment } from 'moment';
 import { EsoStatusRawData } from './esoStatusRawData.interface';
 
 /**
- * Format d'une maintenance d'un server/service ESO
+ * Format of an ESO server/service maintenance
  */
 export interface EsoStatusMaintenance {
   /**
-   * Liste des informations sur le/les server/service concerné par cette maintenance
+   * List of information about the server/service(s) affected by this maintenance
    */
   rawDataList: EsoStatusRawData[];
   /**
-   * Date et heure de début de la maintenance
+   * Start date and time of the maintenance
    */
   beginnerAt: Moment;
   /**
-   * Date et heure de fin de la maintenance
+   * End date and time of the maintenance
    */
   endingAt?: Moment;
 }

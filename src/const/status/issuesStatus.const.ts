@@ -1,7 +1,7 @@
 import { IssuesStatusType } from '../../type/status/issuesStatus.type';
 
 /**
- * Status pour les serveurs/services qui ne fonctionnent pas correctement
+ * Status for servers/services not functioning properly
  */
 const IssuesStatus: IssuesStatusType = 'issues';
 export default IssuesStatus;

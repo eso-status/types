@@ -1,4 +1,4 @@
 /**
- * Zone pour le system de compte
+ * Zone for the account system
  */
 export type AccountZoneType = 'account';

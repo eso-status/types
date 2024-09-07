@@ -1,4 +1,4 @@
 /**
- * Status pour les serveurs/services accessible
+ * Status for accessible servers/services
  */
 export type UpStatusType = 'up';

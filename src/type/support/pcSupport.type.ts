@@ -1,4 +1,4 @@
 /**
- * Support pour PC/Mac
+ * Support for PC/Mac
  */
 export type PcSupportType = 'pc';

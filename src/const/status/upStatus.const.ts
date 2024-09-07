@@ -1,7 +1,7 @@
 import { UpStatusType } from '../../type/status/upStatus.type';
 
 /**
- * Status pour les serveurs/services accessible
+ * Status for accessible servers/services
  */
 const UpStatus: UpStatusType = 'up';
 export default UpStatus;

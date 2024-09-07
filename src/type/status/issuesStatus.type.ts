@@ -1,4 +1,4 @@
 /**
- * Status pour les serveurs/services qui ne fonctionnent pas correctement
+ * Status for servers/services not functioning properly
  */
 export type IssuesStatusType = 'issues';

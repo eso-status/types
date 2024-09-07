@@ -1,7 +1,7 @@
 import { SiteZoneType } from '../../type/zone/siteZone.type';
 
 /**
- * Zone pour le site web
+ * Zone for the website
  */
 const SiteZone: SiteZoneType = 'site';
 export default SiteZone;

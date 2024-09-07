@@ -1,7 +1,7 @@
 import { ServiceWebSiteSlugType } from '../../type/slug/serviceWebSiteSlug.type';
 
 /**
- * Slug pour le service du site web
+ * Slug for the website service
  */
 const ServiceWebSiteSlug: ServiceWebSiteSlugType = 'service_web_site';
 export default ServiceWebSiteSlug;

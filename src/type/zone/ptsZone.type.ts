@@ -1,4 +1,4 @@
 /**
- * Zone pour le PTS
+ * Zone for the PTS (Public Test Server)
  */
 export type PtsZoneType = 'pts';

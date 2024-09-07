@@ -2,6 +2,6 @@ import { ServerSlug } from './ServerSlug.type';
 import { ServiceSlug } from './ServiceSlug.type';
 
 /**
- * Ensemble des slugs de service/server
+ * Collection of service/server slugs
  */
 export type Slug = ServerSlug | ServiceSlug;

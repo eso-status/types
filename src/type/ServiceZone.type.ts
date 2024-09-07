@@ -5,7 +5,7 @@ import { EsoZoneType } from './zone/esoZone.type';
 import { AccountZoneType } from './zone/accountZone.type';
 
 /**
- * Ensemble des zones des services
+ * Collection of zones for services
  */
 export type ServiceZone =
   | SiteZoneType
