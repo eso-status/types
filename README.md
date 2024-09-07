@@ -15,6 +15,8 @@
 [![Build Status](https://github.com/eso-status/types/workflows/CI/badge.svg)](https://github.com/eso-status/types/actions/workflows/CI.yaml)
 [![Build Status](https://github.com/eso-status/types/workflows/CD/badge.svg)](https://github.com/eso-status/types/actions/workflows/CD.yaml)
 
+@eso-status/types is a library containing all data types for the @eso-status solution
+
 ### Install
 ```shell
 npm i @eso-status/types
