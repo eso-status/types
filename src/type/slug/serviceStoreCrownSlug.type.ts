@@ -1,4 +1,4 @@
 /**
- * Slug pour le service de la boutique à couronne
+ * Slug for the Crown Store service
  */
 export type ServiceStoreCrownSlugType = 'service_store_crown';

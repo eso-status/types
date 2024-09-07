@@ -1,4 +1,4 @@
 /**
- * Zone pour l'Europe
+ * Zone for Europe
  */
 export type EuZoneType = 'eu';

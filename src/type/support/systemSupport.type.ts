@@ -1,4 +1,4 @@
 /**
- * Support pour le system de compte
+ * Support for the account system
  */
 export type SystemSupportType = 'system';

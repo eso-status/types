@@ -2,6 +2,6 @@ import { ServerZone } from './ServerZone.type';
 import { ServiceZone } from './ServiceZone.type';
 
 /**
- * Ensemble des zones de service/server
+ * Collection of zones for services/servers
  */
 export type Zone = ServerZone | ServiceZone;

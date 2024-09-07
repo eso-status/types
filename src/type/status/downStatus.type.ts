@@ -1,4 +1,4 @@
 /**
- * Status pour les serveurs/services inaccessible
+ * Status for inaccessible servers/services
  */
 export type DownStatusType = 'down';

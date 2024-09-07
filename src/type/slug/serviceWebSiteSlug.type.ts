@@ -1,4 +1,4 @@
 /**
- * Slug pour le service du site web
+ * Slug for the website service
  */
 export type ServiceWebSiteSlugType = 'service_web_site';

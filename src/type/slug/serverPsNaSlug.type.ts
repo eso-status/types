@@ -1,4 +1,4 @@
 /**
- * Slug pour le Mégaserveur nord-américain PlayStation®
+ * Slug for the North American PlayStation® Megaserver
  */
 export type ServerPsNaSlugType = 'server_ps_na';

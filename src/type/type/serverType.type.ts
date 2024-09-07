@@ -1,4 +1,4 @@
 /**
- * Type pour les serveurs
+ * Type for servers
  */
 export type ServerTypeType = 'server';

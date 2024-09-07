@@ -1,4 +1,4 @@
 /**
- * Zone pour la boutique à couronne
+ * Zone for the Crown Store
  */
 export type CrownZoneType = 'crown';

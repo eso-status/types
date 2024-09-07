@@ -2,6 +2,6 @@ import { ServerTypeType } from './type/serverType.type';
 import { ServiceTypeType } from './type/serviceType.type';
 
 /**
- * Ensemble des types de service/server
+ * Collection of types for services/servers
  */
 export type Type = ServerTypeType | ServiceTypeType;

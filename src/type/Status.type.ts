@@ -4,7 +4,7 @@ import { IssuesStatusType } from './status/issuesStatus.type';
 import { PlannedStatusType } from './status/plannedStatus.type';
 
 /**
- * Ensemble des status de service/server
+ * Collection of service/server statuses
  */
 export type Status =
   | UpStatusType

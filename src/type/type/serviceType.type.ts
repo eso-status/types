@@ -1,4 +1,4 @@
 /**
- * Type pour les services
+ * Type for services
  */
 export type ServiceTypeType = 'service';

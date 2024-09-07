@@ -1,4 +1,4 @@
 /**
- * Slug pour le service de la boutique en jeu
+ * Slug for the in-game store service
  */
 export type ServiceStoreEsoSlugType = 'service_store_eso';
