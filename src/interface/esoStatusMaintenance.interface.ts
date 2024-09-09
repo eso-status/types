@@ -17,4 +17,8 @@ export interface EsoStatusMaintenance {
    * End date and time of the maintenance
    */
   endingAt?: Moment;
+  /**
+   * Date since the server/service maintenance has been planned
+   */
+  plannedSince: Moment;
 }
