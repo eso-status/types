@@ -1,4 +1,3 @@
-import { Moment } from 'moment';
 import { Support } from '../type/Support.type';
 import { Zone } from '../type/Zone.type';
 import { Type } from '../type/Type.type';
@@ -46,9 +45,9 @@ export interface EsoStatusRawData {
    */
   zone: Zone;
   /**
-   * List of dates contained in the announcement
+   * List of dates contained in the announcement (ISO 8601)
    */
-  dates?: Moment[];
+  dates?: string[];
   /**
    * Raw data of the date contained in the announcement
    */

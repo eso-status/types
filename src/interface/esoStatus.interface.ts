@@ -1,4 +1,3 @@
-import { Moment } from 'moment';
 import { Slug } from '../type/Slug.type';
 import { Status } from '../type/Status.type';
 import { Type } from '../type/Type.type';
@@ -20,9 +19,9 @@ export interface EsoStatus {
    */
   status: Status;
   /**
-   * Date since the server/service has been in this status
+   * Date since the server/service has been in this status (ISO 8601)
    */
-  statusSince: Moment;
+  statusSince: string;
   /**
    * Slug of the server/service
    */
