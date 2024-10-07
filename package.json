@@ -1,6 +1,6 @@
 {
   "name": "@eso-status/types",
-  "version": "2.0.0-dev.12",
+  "version": "2.0.0-dev.13",
   "description": "Library containing all data types for the @eso-status solution",
   "author": "@dov118 <contact@dov118.dev> (https://dov118.dev)",
   "license": "MIT",
@@ -28,21 +28,30 @@
     "format": "prettier --write \"src/**/*.ts\"",
     "lint": "eslint \"src/**/*.ts\"",
     "lint:fix": "eslint \"src/**/*.ts\" --fix",
-    "build": "rm -R -f lib/* && tsc --project tsconfig.build.json && rm -f index.d.ts && rm -f index.js && cat lib/type/**/*d.ts >> index.d.ts && cat lib/type/**/*.js >> index.js && cat lib/type/*d.ts >> index.d.ts && cat lib/type/*.js >> index.js && cat lib/const/**/*d.ts >> index.d.ts && cat lib/const/**/*.js >> index.js && cat lib/interface/*d.ts >> index.d.ts && cat lib/interface/*.js >> index.js && rm -R -f lib && echo \"import { Moment } from 'moment';\" >> temp.index.d.ts && grep -v \"import \" index.d.ts >> temp.index.d.ts && mv temp.index.d.ts index.d.ts && awk '!/defineProperty/' ./index.js > index.temp.js && mv index.temp.js ./index.js && awk '!/sourceMappingURL/' ./index.js > index.temp.js && mv index.temp.js ./index.js && awk '!/void 0/' ./index.js > index.temp.js && mv index.temp.js ./index.js && rm -rf temp && sed -i -e 's/declare const/export declare const/g' index.d.ts && awk '!/export default/' ./index.d.ts > index.temp.d.ts && mv index.temp.d.ts ./index.d.ts && sed -i -e 's/const /exports./g' index.js && awk '!/exports.default/' ./index.js > index.temp.js && mv index.temp.js ./index.js && rm -rf index.d.ts-e && rm -rf index.js-e",
+    "build:cleanOld": "rm -rf lib/* && rm -rf index.d.ts && rm -rf index.js",
+    "build:build": "tsc --project tsconfig.build.json",
+    "build:mergeDTS": "cat lib/type/**/*d.ts >> index.d.ts && cat lib/type/*d.ts >> index.d.ts && cat lib/const/**/*d.ts >> index.d.ts && cat lib/interface/*d.ts >> index.d.ts",
+    "build:mergeJS": "cat lib/**/**/*.js >> index.js",
+    "build:merge": "npm run build:mergeDTS && npm run build:mergeJS",
+    "build:cleanAfterMerge": "rm -R -f lib",
+    "build:momentImport": "echo \"import { Moment } from 'moment';\" >> temp.index.d.ts && grep -v \"import \" index.d.ts >> temp.index.d.ts && mv temp.index.d.ts index.d.ts",
+    "build:cleanJs": "awk '!/defineProperty|sourceMappingURL|void 0/' ./index.js > index.temp.js && mv index.temp.js ./index.js",
+    "build:replaceExportDefaultJS": "sed -i -e 's/declare const/export declare const/g' index.d.ts && awk '!/export default/' ./index.d.ts > index.temp.d.ts && mv index.temp.d.ts ./index.d.ts && sed -i -e 's/const /exports./g' index.js && awk '!/exports.default/' ./index.js > index.temp.js && mv index.temp.js ./index.js",
+    "build:replaceExportDefaultTs": "sed -i -e 's/export interface EsoStatus {/export default interface EsoStatus {/g' index.d.ts",
+    "build:change": "npm run build:momentImport && npm run build:cleanJs && npm run build:replaceExportDefaultJS && npm run build:replaceExportDefaultTs",
+    "build:cleanTemp": "rm -rf index.d.ts-e && rm -rf index.js-e",
+    "build": "npm run build:cleanOld && npm run build:build && npm run build:merge && npm run build:cleanAfterMerge && npm run build:change && npm run build:cleanTemp",
     "prepare": "husky"
   },
-  "dependencies": {
-    "moment": "2.30.1"
-  },
   "devDependencies": {
-    "eslint": "8.57.0",
+    "eslint": "8.57.1",
     "eslint-config-airbnb-base": "15.0.0",
     "eslint-config-airbnb-typescript": "18.0.0",
     "eslint-config-prettier": "9.1.0",
     "eslint-plugin-prettier": "5.2.1",
-    "eslint-plugin-sonarjs": "2.0.2",
-    "eslint-plugin-unused-imports": "4.1.3",
-    "husky": "9.1.5",
+    "eslint-plugin-sonarjs": "2.0.3",
+    "eslint-plugin-unused-imports": "4.1.4",
+    "husky": "9.1.6",
     "prettier": "3.3.3",
     "typescript": "5.5.4"
   }
