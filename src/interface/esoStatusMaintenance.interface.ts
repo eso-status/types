@@ -1,4 +1,3 @@
-import { Moment } from 'moment';
 import { EsoStatusRawData } from './esoStatusRawData.interface';
 
 /**
@@ -10,15 +9,15 @@ export interface EsoStatusMaintenance {
    */
   rawDataList: EsoStatusRawData[];
   /**
-   * Start date and time of the maintenance
+   * Start date and time of the maintenance (ISO 8601)
    */
-  beginnerAt: Moment;
+  beginnerAt: string;
   /**
-   * End date and time of the maintenance
+   * End date and time of the maintenance (ISO 8601)
    */
-  endingAt?: Moment;
+  endingAt?: string;
   /**
-   * Date since the server/service maintenance has been planned
+   * Date since the server/service maintenance has been planned (ISO 8601)
    */
-  plannedSince: Moment;
+  plannedSince: string;
 }
