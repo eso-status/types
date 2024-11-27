@@ -1,6 +1,6 @@
 {
   "name": "@eso-status/types",
-  "version": "2.0.0-dev.13",
+  "version": "2.0.0-dev.14",
   "description": "Library containing all data types for the @eso-status solution",
   "author": "@dov118 <contact@dov118.dev> (https://dov118.dev)",
   "license": "MIT",
@@ -14,7 +14,7 @@
     "README.md"
   ],
   "engines": {
-    "node": "^18.18.0 || ^20.0.0"
+    "node": "^20.9.0 || ^22.0.0"
   },
   "bugs": {
     "url": "https://github.com/eso-status/types/issues"
@@ -49,10 +49,10 @@
     "eslint-config-airbnb-typescript": "18.0.0",
     "eslint-config-prettier": "9.1.0",
     "eslint-plugin-prettier": "5.2.1",
-    "eslint-plugin-sonarjs": "2.0.3",
+    "eslint-plugin-sonarjs": "2.0.4",
     "eslint-plugin-unused-imports": "4.1.4",
-    "husky": "9.1.6",
-    "prettier": "3.3.3",
+    "husky": "9.1.7",
+    "prettier": "3.4.1",
     "typescript": "5.5.4"
   }
 }
