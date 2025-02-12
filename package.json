@@ -14,7 +14,7 @@
     "README.md"
   ],
   "engines": {
-    "node": "^20.9.0 || ^22.0.0"
+    "node": ">=18"
   },
   "bugs": {
     "url": "https://github.com/eso-status/types/issues"
@@ -53,6 +53,6 @@
     "eslint-plugin-unused-imports": "4.1.4",
     "husky": "9.1.7",
     "prettier": "3.5.0",
-    "typescript": "5.5.4"
+    "typescript": "5.4.5"
   }
 }
