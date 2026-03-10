@@ -52,7 +52,7 @@ jobs:
       - name: Config git
         if: steps.tag_exist.outputs.exist == 0
         run: |
-          git config --global user.email "contact.dov118.dev@gmail.comv"
+          git config --global user.email "contact.dov118.dev@gmail.com"
           git config --global user.name "dov118"
 
       - name: Set tag
