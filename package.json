@@ -1,6 +1,6 @@
 {
   "name": "@eso-status/types",
-  "version": "2.0.0-dev.18",
+  "version": "2.0.0-dev.19",
   "description": "Library containing all data types for the @eso-status solution",
   "author": "@dov118 <contact@dov118.dev> (https://dov118.dev)",
   "license": "MIT",
@@ -60,9 +60,9 @@
     "eslint-plugin-unused-imports": "4.4.1",
     "globals": "17.4.0",
     "husky": "9.1.7",
-    "lint-staged": "16.3.3",
+    "lint-staged": "16.4.0",
     "prettier": "3.8.1",
     "typescript": "5.9.3",
-    "typescript-eslint": "8.57.0"
+    "typescript-eslint": "8.57.1"
   }
 }
