@@ -17,6 +17,10 @@ export interface EsoStatusRawData {
    */
   raw: string;
   /**
+   * Pattern that matched the raw message from the data source
+   */
+  pattern: string;
+  /**
    * Status of the server/service
    */
   status: Status;
