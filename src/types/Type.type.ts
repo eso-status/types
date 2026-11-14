@@ -1,6 +1,4 @@
 /**
  * Type for ESO servers/services
  */
-export type Type =
-    | 'server'
-    | 'service';
+export type Type = 'server' | 'service';
