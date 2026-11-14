@@ -18,7 +18,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git@github.com:eso-status/types.git"
+    "url": "git+https://github.com/eso-status/types.git"
   },
   "author": "@dov118 <contact@dov118.dev> (https://dov118.dev)",
   "license": "MIT",
