@@ -7,7 +7,4 @@ import { PlannedStatusType } from './status/plannedStatus.type';
  * Collection of service/server statuses
  */
 export type Status =
-  | UpStatusType
-  | DownStatusType
-  | IssuesStatusType
-  | PlannedStatusType;
+  UpStatusType | DownStatusType | IssuesStatusType | PlannedStatusType;
