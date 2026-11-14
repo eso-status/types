@@ -8,8 +8,4 @@ import { AccountZoneType } from './zone/accountZone.type';
  * Collection of zones for services
  */
 export type ServiceZone =
-  | SiteZoneType
-  | ForumZoneType
-  | EsoZoneType
-  | CrownZoneType
-  | AccountZoneType;
+  SiteZoneType | ForumZoneType | EsoZoneType | CrownZoneType | AccountZoneType;

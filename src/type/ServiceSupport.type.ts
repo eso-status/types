@@ -6,6 +6,4 @@ import { SystemSupportType } from './support/systemSupport.type';
  * Collection of supports for servers
  */
 export type ServiceSupport =
-  | WebSupportType
-  | StoreSupportType
-  | SystemSupportType;
+  WebSupportType | StoreSupportType | SystemSupportType;
